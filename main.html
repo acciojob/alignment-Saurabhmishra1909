@@ -14,7 +14,7 @@
             padding: 1px;
         }
         
-        th, td {
+        td {
             border: 1px solid black;
             padding: 1px;
         }
@@ -44,27 +44,24 @@
 <body>
     <h1>HTML Assignment #3</h1>
     
-    <h2>Table 1: Basic Structure</h2>
     <table id="table-1" class="middle">
         <tr>
             <td id="t11">Row 1, Cell 1</td>
-            <td id="t12">Row 1, Cell 2</td>
-            <td id="t13" class="right">Row 1, Cell 3</td>
+            <td>Row 1, Cell 2</td>
+            <td class="right">Row 1, Cell 3</td>
         </tr>
         <tr class="center">
-            <td id="t11">Row 2, Cell 1</td>
-            <td id="t12">Row 2, Cell 2</td>
-            <td id="t13" class="right">Row 2, Cell 3</td>
+            <td>Row 2, Cell 1</td>
+            <td>Row 2, Cell 2</td>
+            <td class="right">Row 2, Cell 3</td>
         </tr>
         <tr>
-            <td id="t11">Row 3, Cell 1</td>
-            <td id="t12">Row 3, Cell 2</td>
+            <td id="t12">Row 3, Cell 1</td>
+            <td>Row 3, Cell 2</td>
             <td id="t13" class="right">Row 3, Cell 3</td>
         </tr>
     </table>
     
-    <h2>Table 2: Spanning Cells</h2>
-    <p>HTML tables allow cells to span multiple rows or columns using the rowspan and colspan attributes.</p>
     <table id="table-2" class="middle">
         <tr>
             <td id="t21" colspan="6">This cell spans all 6 columns</td>
@@ -111,8 +108,6 @@
         </tr>
     </table>
     
-    <h2>Table 3: Styling with Colors and Images</h2>
-    <p>HTML tables can be styled with colors and can contain various elements like images.</p>
     <table id="table-3" class="middle">
         <tr class="green">
             <td>Green Row: Cell 1</td>
@@ -121,14 +116,10 @@
         </tr>
         <tr>
             <td>Row 2, Cell 1</td>
-            <td id="t-image" rowspan="2">
-                <img src="/api/placeholder/400/300" alt="Placeholder Image">
+            <td id="t-image">
+                <img src="/api/placeholder/300/200" alt="Sample Image">
             </td>
             <td>Row 2, Cell 3</td>
-        </tr>
-        <tr>
-            <td>Row 3, Cell 1</td>
-            <td>Row 3, Cell 3</td>
         </tr>
         <tr class="blue">
             <td>Blue Row: Cell 1</td>
@@ -136,15 +127,5 @@
             <td>Blue Row: Cell 3</td>
         </tr>
     </table>
-    
-    <h3>Key Points About HTML Tables:</h3>
-    <ul>
-        <li>Tables are defined with the <code>&lt;table&gt;</code> tag</li>
-        <li>Rows are defined with the <code>&lt;tr&gt;</code> tag</li>
-        <li>Cells are defined with the <code>&lt;td&gt;</code> tag</li>
-        <li>Header cells can be defined with the <code>&lt;th&gt;</code> tag</li>
-        <li>Use <code>colspan</code> and <code>rowspan</code> attributes to merge cells</li>
-        <li>Tables can be styled using CSS for borders, colors, and alignment</li>
-    </ul>
 </body>
 </html>
